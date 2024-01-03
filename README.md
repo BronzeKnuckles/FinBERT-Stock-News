@@ -9,6 +9,8 @@ The idea is to use the dataset of stock news: headline, links, date, etc. to pre
 
 **Currently:** Sentiment scored on news headlines *not news content* <br>
 
+---
+
 **RESULTS:** 
 `
 Result for df ( null values removed )
@@ -21,13 +23,17 @@ Result for df ( null values removed )
     accuracy                           0.55       412
    macro avg       0.34      0.34      0.31       412
 weighted avg       0.75      0.55      0.63       412
+
 `
+
 ##### Looks like its pretty good to predict for stable days i.e. stock price remaing between +/- 0.20%
 *Precision, recall and f1 score metrics for 'stable' prediction seems good*
 -  Usefull for predicting higher / lower volatility during the trading days  (closing prices)
--  Money can be made by using Option Strategies such as:
--    Iron Condor for less volatility (within -0.20% +0.20% price change range)
--    Straddle for high volatiolity (lower or higher than +/- 0.20% price change)
+-  Money can be made by using Option Strategies such as: 
+  1. Iron Condor for less volatility (within -0.20% +0.20% price change range)
+  2. Straddle for high volatiolity (lower or higher than +/- 0.20% price change)
+
+
 ---
 
 Removing 'stable' days to just look at 'increase' and 'decrease' performance:
@@ -42,6 +48,7 @@ Result for filtered df ( only for stocks that made over -/+.2% )
     accuracy                           0.21        57
    macro avg       0.38      0.14      0.20        57
 weighted avg       0.57      0.21      0.31        57
+
 `
 ##### Not good enough.
 
