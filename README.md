@@ -11,8 +11,9 @@ The idea is to use the dataset of stock news: headline, links, date, etc. to pre
 **RESULTS:** 
 
 Result for df ( null values removed )
-`
-                precision    recall  f1-score   support
+
+        
+       precision    recall  f1-score   support
 
        decrease       0.09      0.23      0.13        31
        increase       0.06      0.19      0.09        26
@@ -23,8 +24,18 @@ Result for df ( null values removed )
     weighted avg       0.75      0.55      0.63       412
 
 
-##### Looks like its pretty good to predict for stable days i.e. stock price remaining between +/- 0.20%
-*Precision, recall and f1 score metrics for 'stable' prediction seems good*
+##### Using Headline Sentiment alone *is quite good(?)* to predict for stable days i.e. stock price remaining between +/- 0.20% (precision, recall and f1)
+*Note: supports are very high for 'stable' but then we only modeled/predict based on our threshold of sentiment scores*
+| Metric | Desc. |
+| --- | --- |
+| Accuracy | true prositive + true negative / total |
+| precision | true positives / actual results |
+| recall | true positve / predicted resuts |
+| f1-score | harmonic mean of precision and recall |
+
+---
+
+Good Stability predictions: 
 -  Usefull for predicting higher / lower volatility during the trading days  (closing prices)
 -  Money can be made by using Option Strategies such as: 
     1. Iron Condor for less volatility (within -0.20% +0.20% price change range)
@@ -34,10 +45,10 @@ Result for df ( null values removed )
 ---
 
 Removing 'stable' days to just look at 'increase' and 'decrease' performance:
-Result for filtered df ( only for stocks that made over -/+.2% ):
-`
+Result for filtered df ( only for stocks that made over -/+0.20% ):
 
-                  precision    recall  f1-score   support
+
+       precision    recall  f1-score   support
 
         decrease       0.58      0.23      0.33        31
         increase       0.56      0.19      0.29        26
@@ -50,6 +61,7 @@ Result for filtered df ( only for stocks that made over -/+.2% ):
 
 ##### Not good enough.
 
+--- 
 
 #### **Next Steps:** 
 -  [ ] Scrape each stock news *content* with the links in dataset
