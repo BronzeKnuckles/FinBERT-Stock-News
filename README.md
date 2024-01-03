@@ -24,7 +24,7 @@ Result for df ( null values removed )
         accuracy                           0.55       412
        macro avg       0.34      0.34      0.31       412
     weighted avg       0.75      0.55      0.63       412
-`
+
 
 ##### Looks like its pretty good to predict for stable days i.e. stock price remaing between +/- 0.20%
 *Precision, recall and f1 score metrics for 'stable' prediction seems good*
@@ -50,7 +50,7 @@ Result for filtered df ( only for stocks that made over -/+.2% ):
        macro avg       0.38      0.14      0.20        57
     weighted avg       0.57      0.21      0.31        57
 
-`
+
 ##### Not good enough.
 
 
