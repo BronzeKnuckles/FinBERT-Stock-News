@@ -26,7 +26,7 @@ Result for df ( null values removed )
     weighted avg       0.75      0.55      0.63       412
 
 
-##### Looks like its pretty good to predict for stable days i.e. stock price remaing between +/- 0.20%
+##### Looks like its pretty good to predict for stable days i.e. stock price remaining between +/- 0.20%
 *Precision, recall and f1 score metrics for 'stable' prediction seems good*
 -  Usefull for predicting higher / lower volatility during the trading days  (closing prices)
 -  Money can be made by using Option Strategies such as: 
