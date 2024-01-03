@@ -30,8 +30,8 @@ Result for df ( null values removed )
 *Precision, recall and f1 score metrics for 'stable' prediction seems good*
 -  Usefull for predicting higher / lower volatility during the trading days  (closing prices)
 -  Money can be made by using Option Strategies such as: 
-  1. Iron Condor for less volatility (within -0.20% +0.20% price change range)
-  2. Straddle for high volatiolity (lower or higher than +/- 0.20% price change)
+    1. Iron Condor for less volatility (within -0.20% +0.20% price change range)
+    2. Straddle for high volatiolity (lower or higher than +/- 0.20% price change)
 
 
 ---
