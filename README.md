@@ -1,4 +1,4 @@
-# Using FinBert model to predict / test for stock price movements based on sentiment scores
+# Using FinBert to predict / test for stock price movements based on news sentiment scores
 Link to Dataset : https://www.kaggle.com/datasets/miguelaenlle/massive-stock-news-analysis-db-for-nlpbacktests
 
 The idea is to use the dataset of stock news: headline, links, date, etc. to predict (or test) the prices movements of those stocks (increase or decrease or remain stable) based on sentiment score of the news using FinBert. 
