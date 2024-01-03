@@ -43,9 +43,9 @@ Good Stability predictions:
 
 
 ---
-
+Result for filtered df ( only for stocks that made over -/+0.20% ): <br>
 Removing 'stable' days to just look at 'increase' and 'decrease' performance:
-Result for filtered df ( only for stocks that made over -/+0.20% ):
+
 
 
        precision    recall  f1-score   support
